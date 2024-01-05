@@ -15,3 +15,4 @@ let ropa = {
 
 ropa.pantalon = '👖'
 console.log(ropa)
+

@@ -1,4 +1,4 @@
-// tipo de dato primitivo - Inmutable
+// tipo de dato primitivo - Inmutable | valor
 let numero = 23
 numero = numero + 10
 console.log(numero)
@@ -7,7 +7,7 @@ let esVerdadero = true
 esVerdadero = false
 console.log(esVerdadero)
 
-// tipo de dato complejo - mutable
+// tipo de dato complejo - mutable | referencia
 let usuario = {
     nombre: 'Pepito',
     edad: 15

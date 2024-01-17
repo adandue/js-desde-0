@@ -1,0 +1,12 @@
+/*
+
+for(variable; condición; incremento/decremento) {
+    código a ejecutar
+}
+
+*/
+let list = ['eat', 'sleep', 'code', 'repeat']
+
+for (i=0; i < list.length; i++) {
+    console.log(list[i])
+}

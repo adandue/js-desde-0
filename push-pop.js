@@ -8,6 +8,6 @@ console.log(countries)
 console.log(newCountries)
 
 //pop()
-const removeCountry = countries.pop()
+const removedCountry = countries.pop()
 console.log(countries)
-console.log(newCountries)
+console.log(removedCountry)

@@ -28,3 +28,18 @@ const reducedWords = words.reduce((accumulator, currentValue) => {
 }, [])
 
 console.log(reducedWords)
+
+/*
+Exercise: Passing Grade Average
+
+Create a program that takes an array of grades as input and calculates the average only for passing grades (greater than or equal to 70)
+*/
+const grades = [85, 92, 60, 78, 95, 66, 88, 50, 100, 94, 45, 69]
+
+const passingGrades = grades.filter(grade => grade >= 70)
+
+const averagePassingGrade = passingGrades.reduce((sum, grade) => sum + grade, 0) / passingGrades.length
+
+console.log('Original grades: ', grades)
+console.log('Passing Grades: ', passingGrades)
+console.log('Average Passing Grade: ',averagePassingGrade.toFixed(2))

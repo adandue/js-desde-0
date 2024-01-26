@@ -52,3 +52,21 @@ console.log('Largest Transaction: ', largestTransaction)
 //3. filter purchase transactions
 const purchaseTransactions = transactions.filter(transaction => transaction.amount < 0)
 console.log(purchaseTransactions)
+
+//4. Find a transaction by description
+const specificTransaction = transactions.find(transaction => transaction.description === 'amazon')
+console.log('Coincidences: ', specificTransaction)
+
+//5. Find the index of a transaction by amount
+const indexTransactionWithAmount = transactions.findIndex(transaction => transaction.amount === -369)
+console.log('Index Transaction with amount -369: ', indexTransactionWithAmount)
+
+//6. Update transactions descriptions
+transactions.forEach(transaction => {
+    if(transaction.amount < 0) {
+        transaction.description = `Èxpense: ${transaction.description}`
+    } else {
+        transaction.description = `Income: ${transaction.description}`
+    }
+})
+console.log('Updated Transactions: ', transactions)

@@ -20,3 +20,27 @@ const lastIndex1 = numbersAgain.lastIndexOf(6)
 console.log(lastIndex1)
 const lastIndex2 = numbersAgain.lastIndexOf(7)
 console.log(lastIndex2)
+
+//Exersice Finding Substring Index
+
+const stringArray = ['apple', 'banana', 'orange', 'grape', 'banana', 'kiwi']
+const target = 'banana'
+
+const findStringIndicesInArray = (array, target) => {
+    const result = {
+        includesTargetString: false,
+        firstOccurrenceIndex: -1,
+        lastOccurrenceIndex: -1
+    }
+    array.forEach(element => {
+        if(element.includes(target)) {
+            result.includesTargetString = true
+            result.firstOccurrenceIndex = array.indexOf(target)
+            result.lastOccurrenceIndex = array.lastIndexOf(target)
+        }
+    });
+    return result
+}
+
+const result = findStringIndicesInArray(stringArray, target)
+console.log(result)

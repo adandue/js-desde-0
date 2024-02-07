@@ -40,3 +40,15 @@ dog1.emitSound()
 
 const racoon = new Animal('Rocket', 'Racoon')
 racoon.emitSound()
+
+dog1.newMethod = () => {
+    console.log('This is a method')
+}
+console.log(dog1)
+dog1.newMethod()
+
+Dog.prototype.secondMethod = () => {
+    console.log('This is the second method')
+}
+console.log(dog1)
+dog1.secondMethod()

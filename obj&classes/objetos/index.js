@@ -23,3 +23,17 @@ const persona = {
         console.log(`Hola mi nombre es ${persona.name}`)
     }
 }
+
+console.log(persona)
+console.log(persona.name)
+persona.saludar()
+
+persona.phone = "2225508896"
+console.log(persona.phone)
+
+persona.despedir = () => console.log(`Adiós`)
+persona.despedir()
+
+console.log(persona.address.street)
+
+delete persona.phone
